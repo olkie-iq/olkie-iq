@@ -13,10 +13,9 @@
             --glass: rgba(255, 140, 0, 0.1);
         }
 
-        * { box-sizing: border-box; transition: all 0.4s ease; }
+        * { box-sizing: border-box; transition: all 0.3s ease; }
         body, html { margin: 0; padding: 0; font-family: 'Cairo', sans-serif; overflow-x: hidden; min-height: 100vh; }
         
-        /* التحكم بالخلفية بناءً على الوضع */
         body.night { background-color: var(--dark-bg); color: white; }
         body.morning { background-color: var(--morning-bg); color: white; }
 
@@ -33,30 +32,29 @@
             margin-bottom: 20px; object-fit: cover;
         }
         
-        /* المحتوى الرئيسي */
+        /* المحتوى */
         .main-container { max-width: 800px; margin: 40px auto; padding: 20px; display: none; opacity: 0; }
         .card {
-            background: rgba(0, 0, 0, 0.7); border-bottom: 2px solid var(--neon-orange);
+            background: rgba(0, 0, 0, 0.75); border-bottom: 2px solid var(--neon-orange);
             margin-bottom: 15px; border-radius: 10px; backdrop-filter: blur(10px);
         }
         .card-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; color: var(--neon-orange); font-weight: 700; font-size: 1.2rem; }
         .card-content { max-height: 0; padding: 0 20px; overflow: hidden; color: #eee; line-height: 1.8; }
         .card.active .card-content { max-height: 600px; padding: 20px; }
 
-        /* الأزرار */
+        /* الأزرار السفلى */
+        .controls { position: fixed; bottom: 20px; left: 20px; right: 20px; display: flex; justify-content: space-between; z-index: 100; gap: 10px; }
+        .control-btn, select { 
+            padding: 12px; border-radius: 10px; border: 1px solid var(--neon-orange); 
+            background: rgba(0,0,0,0.9); color: white; cursor: pointer; font-family: 'Cairo'; flex: 1; font-weight: bold;
+        }
+
         .btn-link {
             display: inline-block; padding: 10px 18px; background: var(--glass);
             border: 1px solid var(--neon-orange); color: white; text-decoration: none;
             margin: 6px; border-radius: 8px; font-size: 0.95rem; font-weight: bold;
         }
         .btn-link:hover { background: var(--neon-orange); color: black; box-shadow: 0 0 15px var(--neon-orange); }
-
-        /* زر تبديل الوضع */
-        .mode-toggle-btn {
-            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-            padding: 12px 30px; border-radius: 30px; border: 2px solid var(--neon-orange);
-            background: rgba(0,0,0,0.8); color: white; cursor: pointer; font-weight: bold; z-index: 100;
-        }
 
         .fade-in { animation: fadeIn 0.8s forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -68,28 +66,30 @@
 
     <div id="welcome-screen">
         <img src="olkie.jpg" class="profile-img" alt="Olkie" onerror="this.src='https://ui-avatars.com/api/?name=Olkie&background=ff8c00&color=fff'">
-        <div style="font-size: 1.8rem; margin-bottom: 20px; font-weight: bold;">أهلاً في عالم أولكي</div>
-        <button class="btn-link" onclick="openWorld()" style="padding: 10px 50px; font-size: 1.2rem;">دخول</button>
+        <div id="welcomeText" style="font-size: 1.8rem; margin-bottom: 20px; font-weight: bold;">أهلاً في عالم أولكي</div>
+        <button class="control-btn" id="enterBtn" onclick="openWorld()" style="max-width: 200px;">دخول</button>
     </div>
 
     <div class="main-container" id="main-content">
-        <h1 id="modeText" style="text-align: center; color: var(--neon-orange); margin-bottom: 30px;">الوضع الليلي</h1>
+        <h1 id="modeStatus" style="text-align: center; color: var(--neon-orange); margin-bottom: 30px;">الوضع الليلي</h1>
         
         <div class="card">
-            <div class="card-header" onclick="toggleCard(this)">01. مَن أنا؟ <span>+</span></div>
-            <div class="card-content">اسمي أولكي، مبرمج ومصمم، ولدي بعض مشاريع الألعاب التي برمجتها. أرجو أن تستمتعوا وأنتم تجربون ألعابي!</div>
+            <div class="card-header" onclick="toggleCard(this)"><span id="h1">01. مَن أنا؟</span> <span>+</span></div>
+            <div class="card-content" id="c1">اسمي أولكي، مبرمج ومصمم، ولدي بعض مشاريع الألعاب التي برمجتها.
+أرجو أن تستمتعوا وأنتم تجربون ألعابي!</div>
         </div>
-<div class="card">
-            <div class="card-header" onclick="toggleCard(this)">02. ألعابي ومجتمعي <span>+</span></div>
+
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)"><span id="h2">02. ألعابي ومجتمعي</span> <span>+</span></div>
             <div class="card-content">
-                <a href="https://olkie-1.itch.io/" target="_blank" class="btn-link">🎮 ألعابي على Itch.io</a>
-                <a href="https://discord.com/channels/1252787684947005552/1253135065865519135" target="_blank" class="btn-link">💬 مجتمع الديسكورد</a>
-                <a href="https://youtube.com/@_olkie?si=kEObA2_kbXdKUb6t" target="_blank" class="btn-link">🎥 قناة اليوتيوب</a>
+                <a href="https://olkie-1.itch.io/" target="_blank" class="btn-link" id="b1">🎮 ألعابي على Itch.io</a>
+                <a href="https://discord.com/channels/1252787684947005552/1253135065865519135" target="_blank" class="btn-link" id="b2">💬 مجتمع الديسكورد</a>
+                <a href="https://youtube.com/@_olkie?si=kEObA2_kbXdKUb6t" target="_blank" class="btn-link" id="b3">🎥 قناة اليوتيوب</a>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-header" onclick="toggleCard(this)">03. الحسابات <span>+</span></div>
+            <div class="card-header" onclick="toggleCard(this)"><span id="h3">03. الحسابات</span> <span>+</span></div>
             <div class="card-content">
                 <a href="https://discord.com/channels/@me/1480955456280334447" target="_blank" class="btn-link">Discord Account</a>
                 <a href="https://www.linkedin.com/in/olkie" target="_blank" class="btn-link">LinkedIn Profile</a>
@@ -97,38 +97,72 @@
         </div>
     </div>
 
-    <button class="mode-toggle-btn" onclick="toggleMode()">تبديل الوضع</button>
+    <div class="controls">
+        <select id="langSelector" onchange="changeLanguage(this.value)">
+            <option value="ar">العربية 🇸🇦</option>
+            <option value="en">English 🇺🇸</option>
+        </select>
+        <button class="control-btn" onclick="toggleMode()" id="modeBtn">تبديل الوضع</button>
+    </div>
 
     <script>
-        // فتح الموقع
+        const translations = {
+            ar: {
+                welcome: "أهلاً في عالم أولكي", enter: "دخول",
+                h1: "01. مَن أنا؟", c1: "اسمي أولكي، مبرمج ومصمم، ولدي بعض مشاريع الألعاب التي برمجتها. أرجو أن تستمتعوا وأنتم تجربون ألعابي!",
+                h2: "02. ألعابي ومجتمعي", b1: "🎮 ألعابي على Itch.io", b2: "💬 مجتمع الديسكورد", b3: "🎥 قناة اليوتيوب",
+                h3: "03. الحسابات", modeN: "الوضع الليلي", modeM: "الوضع الصبحي", btnMode: "تبديل الوضع", dir: "rtl"
+            },
+            en: {
+                welcome: "Welcome to Olkie World", enter: "Enter",
+                h1: "01. Who am I?", c1: "My name is Olkie, a programmer and designer. I have some game projects that I programmed.",
+                h2: "02. Games & Community", b1: "🎮 My Games on Itch.io", b2: "💬 Discord Community", b3: "🎥 YouTube Channel",
+                h3: "03. Accounts", modeN: "Night Mode", modeM: "Morning Mode", btnMode: "Toggle Mode", dir: "ltr"
+            }
+        };
+
+        function changeLanguage(lang) {
+            const d = translations[lang];
+            document.getElementById('welcomeText').innerText = d.welcome;
+            document.getElementById('enterBtn').innerText = d.enter;
+            document.getElementById('h1').innerText = d.h1;
+            document.getElementById('c1').innerText = d.c1;
+            document.getElementById('h2').innerText = d.h2;
+            document.getElementById('h3').innerText = d.h3;
+            document.getElementById('b1').innerText = d.b1;
+            document.getElementById('b2').innerText = d.b2;
+            document.getElementById('b3').innerText = d.b3;
+            document.getElementById('modeBtn').innerText = d.btnMode;
+            document.documentElement.dir = d.dir;
+            updateModeText();
+        }
+
+        function toggleMode() {
+            document.body.classList.toggle('morning');
+            document.body.classList.toggle('night');
+            updateModeText();
+        }
+
+        function updateModeText() {
+            const isNight = document.body.classList.contains('night');
+            const lang = document.getElementById('langSelector').value;
+            document.getElementById('modeStatus').innerText = isNight ? translations[lang].modeN : translations[lang].modeM;
+        }
+
         function openWorld() {
             document.getElementById('welcome-screen').style.display = 'none';
             const content = document.getElementById('main-content');
             content.style.display = 'block';
-            setTimeout(() => content.classList.add('fade-in'), 10);
+            setTimeout(() => content.classList.
+add('fade-in'), 10);
         }
 
-        // تبديل البطاقات
         function toggleCard(header) {
             const card = header.parentElement;
             card.classList.toggle('active');
-            header.querySelector('span').innerText = card.classList.contains('active') ? '-' : '+';
+            header.querySelectorAll('span')[1].innerText = card.classList.contains('active') ? '-' : '+';
         }
 
-        // تبديل الوضع (ليلي / صبحي)
-        function toggleMode() {
-            const body = document.body;
-            const text = document.getElementById("modeText");
-            if (body.classList.contains("night")) {
-                body.classList.replace("night", "morning");
-                text.textContent = "الوضع الصبحي";
-            } else {
-                body.classList.replace("morning", "night");
-                text.textContent = "الوضع الليلي";
-            }
-        }
-
-        // كود الماتريكس
         const canvas = document.getElementById('matrix-canvas');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth; canvas.height = window.innerHeight;
