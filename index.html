@@ -1,8 +1,4 @@
-أرجو أن تستمتعوا وأنتم تجربون ألعابي!</div>
-        </div>
-
-        <div class="card">
-            <div class="card-header" onclick="toggleCard(this)"><span id="h2">02. ألعابي ومجتمعي</span> <span>+</span></div>
+<div class="card-header" onclick="toggleCard(this)"><span id="h2">02. ألعابي ومجتمعي</span> <span>+</span></div>
             <div class="card-content">
                 <a href="https://olkie-1.itch.io/" target="_blank" class="btn-link" id="b1">🎮 ألعابي على Itch.io</a>
                 <a href="https://discord.com/channels/1252787684947005552/1253135065865519135" target="_blank" class="btn-link" id="b2">💬 مجتمع الديسكورد</a>
@@ -75,38 +71,10 @@
             document.getElementById('welcome-screen').style.display = 'none';
             const content = document.getElementById('main-content');
             content.style.display = 'block';
-            setTimeout(() => content.classList.
-add('fade-in'), 10);
+            setTimeout(() => content.classList.add('fade-in'), 10);
         }
 
         function toggleCard(header) {
-            const card = header.parentElement;
-            card.classList.toggle('active');
-            header.querySelectorAll('span')[1].innerText = card.classList.contains('active') ? '-' : '+';
-        }
-
-        const canvas = document.getElementById('matrix-canvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-        const chars = "OLKIE01"; const fontSize = 16;
-        const columns = canvas.width / fontSize;
-        const drops = Array.from({ length: Math.floor(columns) }).fill(1);
-        function draw() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#ff8c00'; ctx.font = fontSize + 'px monospace';
-            for (let i = 0; i < drops.length; i++) {
-                const text = chars.charAt(Math.floor(Math.random() * chars.length));
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-                drops[i]++;
-            }
-        }
-        setInterval(draw, 35);
-        window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
-    </script>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -142,26 +110,26 @@ add('fade-in'), 10);
         
         .main-container { max-width: 800px; margin: 40px auto; padding: 20px; display: none; opacity: 0; }
         .card {
-            background: rgba(10, 10, 10, 0.85); border-bottom: 2px solid var(--neon-orange);
+            background: rgba(0, 0, 0, 0.6); border-bottom: 2px solid var(--neon-orange);
             margin-bottom: 15px; border-radius: 10px; backdrop-filter: blur(10px);
         }
-        .card-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; color: var(--neon-orange); font-weight: 700; font-size: 1.2rem; }
-        .card-content { max-height: 0; padding: 0 20px; overflow: hidden; color: #eee; line-height: 1.6; }
+        .card-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; color: var(--neon-orange); font-weight: 700; }
+        .card-content { max-height: 0; padding: 0 20px; overflow: hidden; color: #eee; line-height: 1.8; }
         .card.active .card-content { max-height: 500px; padding: 20px; }
 
         .controls { position: fixed; bottom: 20px; left: 20px; right: 20px; display: flex; justify-content: space-between; z-index: 100; gap: 10px; }
         select, .control-btn { 
             padding: 10px; border-radius: 8px; border: 1px solid var(--neon-orange); 
-            background: rgba(0,0,0,0.9); color: white; cursor: pointer; font-family: 'Cairo'; flex: 1;
+            background: rgba(0,0,0,0.8); color: white; cursor: pointer; font-family: 'Cairo'; flex: 1;
         }
 
         .btn-link {
             display: inline-block; padding: 10px 18px; background: var(--glass);
             border: 1px solid var(--neon-orange); color: white; text-decoration: none;
-            margin: 8px 4px; border-radius: 8px; font-size: 0.95rem; font-weight: bold;
+            margin: 5px; border-radius: 5px; font-size: 0.9rem; font-weight: bold;
         }
         .btn-link:hover { background: var(--neon-orange); color: black; box-shadow: 0 0 15px var(--neon-orange); }
-        
+
         .fade-in { animation: fadeIn 0.8s forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -172,13 +140,43 @@ add('fade-in'), 10);
 
     <div id="welcome-screen">
         <img src="olkie.jpg" class="profile-img" alt="Olkie" onerror="this.src='https://ui-avatars.com/api/?name=Olkie&background=ff8c00&color=fff'">
-        <div id="welcomeText" style="font-size: 1.8rem; margin-bottom: 20px; font-weight: bold; text-shadow: 0 0 10px var(--neon-orange);">أهلاً في عالم أولكي</div>
-        <button class="control-btn" id="enterBtn" onclick="openWorld()" style="max-width: 200px;">دخول</button>
+        <div class="welcome-text" id="welcomeText" style="font-size: 1.8rem; margin-bottom: 20px;">أهلاً في عالم أولكي</div>
+        <button class="control-btn" id="enterBtn" onclick="openWorld()" style="padding: 10px 40px;">دخول</button>
     </div>
 
     <div class="main-container" id="main-content">
-        <h1 id="modeStatus" style="text-align: center; color: var(--neon-orange); margin-bottom: 30px; text-shadow: 0 0 5px black;">الوضع الليلي</h1>
+        <h1 id="modeStatus" style="text-align: center; color: var(--neon-orange);">الوضع الليلي</h1>
         
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)"><span id="h1">01. مَن أنا؟</span> <span>+</span></div>
-            <div class="card-content" id="c1">اسمي أولكي، مبرمج ومصمم، ولدي بعض مشاريع الألعاب التي برمجتها.
+            <div class="card-content" id="c1">اسمي أولكي، مبرمج ومصمم، ولدي بعض مشاريع الألعاب التي برمجتها. أرجو أن تستمتعوا وأنتم تجربون ألعابي!</div>
+        </div>
+
+        <div class="card">
+const card = header.parentElement;
+            card.classList.toggle('active');
+            header.querySelectorAll('span')[1].innerText = card.classList.contains('active') ? '-' : '+';
+        }
+
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+        const chars = "OLKIE01"; const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array.from({ length: Math.floor(columns) }).fill(1);
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#ff8c00'; ctx.font = fontSize + 'px monospace';
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars.charAt(Math.floor(Math.random() * chars.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 35);
+        window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
+    </script>
+</body>
+</html>
