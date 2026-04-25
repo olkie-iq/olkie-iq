@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://olkie.world" target="_blank"><img src="https://img.shields.io/badge/Portfolio-24283b?style=for-the-badge&logo=google-chrome&logoColor=7aa2f7" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/olkie-iq" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-24283b?style=for-the-badge&logo=linkedin&logoColor=7aa2f7" alt="LinkedIn"></a>
-  <a href="https://www.youtube.com/@olkie-iq" target="_blank"><img src="https://img.shields.io/badge/YouTube-24283b?style=for-the-badge&logo=youtube&logoColor=f7768e" alt="YouTube"></a>
+  <a href="https://www.youtube.com/@olkie-iq" target="_blank"><img src="https://img.shields.io/badge/YouTube-24283b?style=for-the-badge&logo=youtube&logoColor=7aa2f7" alt="YouTube"></a>
   <a href="https://discord.com/users/olkie-iq" target="_blank"><img src="https://img.shields.io/badge/Discord-24283b?style=for-the-badge&logo=discord&logoColor=7aa2f7" alt="Discord"></a>
   <a href="https://t.me/olkie_iq" target="_blank"><img src="https://img.shields.io/badge/Telegram-24283b?style=for-the-badge&logo=telegram&logoColor=7aa2f7" alt="Telegram"></a>
 </p>
