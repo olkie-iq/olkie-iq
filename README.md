@@ -14,7 +14,7 @@
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=1a1b26&height=150&section=header&text=Welcome%20to%20Olkie%20World&fontSize=45&animation=fadeIn&fontColor=7aa2f7&desc=%20Building%20the%20future%20of%20interactive%20experiences&descSize=20&descAlignY=65" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7aa2f7&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50" />
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=olkie-iq&label=PROFILE+VIEWS&color=7aa2f7&style=flat-square" alt="Visits"/>
