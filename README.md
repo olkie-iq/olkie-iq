@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Hussein (olkie-iq) 👋
+# Hi, I'm olkie 👋
 
 ### Game Developer 🕹️ | Full-Stack Engineer 💻 | Founder of Olkie World 🚀
 
@@ -37,10 +37,10 @@ const hussein = {
 
 ---
 
-### 🛠️ Tech Stack & Tools
+### Tech Toolbox 🧰
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,cpp,flutter,linux,github,vscode,postman&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,cpp,flutter,dart,java,python,windows,linux,git,github,vscode,figma,bash,postman&theme=dark" />
 </p>
 
 ---
@@ -58,7 +58,7 @@ const hussein = {
 
 ---
 
-### 💬 Daily Quote
+### 💬 Quote
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
