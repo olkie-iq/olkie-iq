@@ -11,7 +11,7 @@
 
 <br>
 
-![Profile Views](https://komarev.com/ghpvc/?username=olkie-iq&style=flat-square&color=orange&label=TOTAL+HITS)
+![Visitors](https://komarev.com/ghpvc/?username=olkie-iq&label=PROFILE+VIEWS&color=orange&style=flat-square)
 
 </div>
 
@@ -31,8 +31,9 @@ I am a versatile **Software Developer** with a passion for building immersive **
 
 ### 📊 GitHub Stats
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=olkie-iq&show_icons=true&theme=tokyonight" alt="Olkie's GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=olkie-iq&theme=tokyonight" alt="Olkie's GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=olkie-iq&show_icons=true&theme=tokyonight&hide_border=true" />
+  <br><br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=olkie-iq&theme=tokyonight&hide_border=true" />
 </div>
 
 ---
