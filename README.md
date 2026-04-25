@@ -40,5 +40,26 @@ const olkie = {
 ### Tech Toolbox 🧰
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,cpp,flutter,dart,java,python,windows,
-  
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,cpp,flutter,dart,java,python,windows,linux,git,github,figma,bash&theme=dark" />
+</p>
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=olkie-iq&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=olkie-iq&layout=compact&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=olkie-iq&theme=tokyonight" />
+</p>
+
+---
+
+### 💬 Quote
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+</p>
