@@ -41,7 +41,7 @@ const olkie = {
 
 ---
 
-### Tech Toolbox 🧰
+### 🧰 Tech Toolbox
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,firebase,cpp,flutter,dart,java,python,windows,linux,git,github,figma,bash&theme=dark" />
