@@ -1,12 +1,11 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=1a1b26&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" />
-
-<br>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7aa2f7&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=ffffff&theme=transparent" />
+<div style="margin-top: -30px;">
 
 # Hi, I'm olkie 👋
 
-### Game Developer 🕹️ | Full-Stack Engineer 💻 | Founder of Olkie World 🚀
+### Game Developer 🕹️ | Full-Stack Engineer 💻 | Content Creator 🎬
 
 <p align="center">
   <a href="https://olkie.world" target="_blank"><img src="https://img.shields.io/badge/Portfolio-7aa2f7?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
@@ -20,6 +19,7 @@
   <img src="https://komarev.com/ghpvc/?username=olkie-iq&label=PROFILE+VIEWS&color=7aa2f7&style=flat-square" alt="Visits"/>
 </p>
 
+</div>
 </div>
 
 ---
