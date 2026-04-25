@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=1a1b26&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" />
+
+<br>
+
 # Hi, I'm olkie 👋
 
 ### Game Developer 🕹️ | Full-Stack Engineer 💻 | Founder of Olkie World 🚀
@@ -11,10 +15,6 @@
   <a href="https://discord.com/users/olkie-iq" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://t.me/olkie_iq" target="_blank"><img src="https://img.shields.io/badge/Telegram-26A8E1?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
 </p>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=1a1b26&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" />
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=olkie-iq&label=PROFILE+VIEWS&color=7aa2f7&style=flat-square" alt="Visits"/>
