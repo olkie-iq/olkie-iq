@@ -4,11 +4,13 @@
 
 ### Game Developer 🕹️ | Full-Stack Engineer 💻 | Founder of Olkie World 🚀
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-7aa2f7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://olkie.world) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olkie-iq) 
-[![YouTube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@olkie-iq) 
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/olkie-iq) 
-[![Telegram](https://img.shields.io/badge/Telegram-26A8E1?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/olkie_iq)
+<p align="center">
+  <a href="https://olkie.world" target="_blank"><img src="https://img.shields.io/badge/Portfolio-7aa2f7?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/olkie-iq" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.youtube.com/@olkie-iq" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://discord.com/users/olkie-iq" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://t.me/olkie_iq" target="_blank"><img src="https://img.shields.io/badge/Telegram-26A8E1?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
+</p>
 
 <br>
 
