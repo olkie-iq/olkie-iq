@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00000000&height=150&section=header&text=Welcome%20to%20Olkie%20World%20%0A%20Hi,%20I'm%20olkie%20👋&fontSize=40&fontColor=7aa2f7&desc=%20&descAlign=50&descSize=0" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00000000&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" />
 
-<div style="margin-top: -20px;">
+# Hi, I'm olkie 👋
 
 ### Game Developer 🕹️ | Full-Stack Engineer 💻 | Content Creator 🎬
 
@@ -17,7 +17,6 @@
   <img src="https://komarev.com/ghpvc/?username=olkie-iq&label=PROFILE+VIEWS&color=7aa2f7&style=flat-square" alt="Visits"/>
 </p>
 
-</div>
 </div>
 
 ---
