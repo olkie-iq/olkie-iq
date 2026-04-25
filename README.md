@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00000000&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" />
-
 # Hi, I'm olkie 👋
 
 ### Game Developer 🕹️ | Full-Stack Engineer 💻 | Content Creator 🎬
