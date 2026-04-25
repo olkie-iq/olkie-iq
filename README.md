@@ -1,11 +1,15 @@
+<div align="center">
+
 # 🚀 Olkie 
 ### Game Developer • Full-Stack Engineer • AI Expert
 
-<a href="https://olkie.rf.gd/"><img src="https://img.shields.io/badge/Portfolio-orange?style=flat-square&logo=google-chrome&logoColor=white"></a>
-<a href="https://www.youtube.com/@_olkie"><img src="https://img.shields.io/badge/YouTube-red?style=flat-square&logo=youtube&logoColor=white"></a>
-<a href="https://www.linkedin.com/in/olkie"><img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/PNG/Blue/LinkedIn.png" width="25" height="25"></a>
-<a href="https://discord.gg/QdvF2tjy6h"><img src="https://img.shields.io/badge/Discord-purple?style=flat-square&logo=discord&logoColor=white"></a>
-<a href="https://t.me/Al_irabi"><img src="https://img.shields.io/badge/Telegram-blue?style=flat-square&logo=telegram&logoColor=white"></a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-orange?style=flat-square&logo=google-chrome&logoColor=white)](https://olkie.rf.gd/) 
+[![YouTube](https://img.shields.io/badge/YouTube-red?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@_olkie) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olkie) 
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/QdvF2tjy6h) 
+[![Telegram](https://img.shields.io/badge/Telegram-26A8E1?style=flat-square&logo=telegram&logoColor=white)](https://t.me/Al_irabi)
+
+</div>
 
 ---
 
@@ -22,7 +26,9 @@ I am a versatile **Software Developer** with a passion for building immersive **
 ---
 
 ### 📊 GitHub Stats
-![Stats](https://github-readme-stats.vercel.app/api?username=SP-XD&show_icons=true&theme=nord)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=olkie-iq&show_icons=true&theme=nord&hide_border=true" alt="Olkie's GitHub Stats" />
+</div>
 
 ---
 
