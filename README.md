@@ -59,7 +59,6 @@ const hussein = {
 ---
 
 ### 💬 Daily Quote
-> "الخيل والليل والبيداء تعرفني.. والسيف والرمح والقرطاس والقلم" — *المتنبي*
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
