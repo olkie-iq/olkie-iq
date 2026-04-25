@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00000000&height=80&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" style="margin-bottom: -40px;" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00000000&height=120&section=header&text=Welcome%20to%20Olkie%20World&fontSize=50&fontColor=7aa2f7" />
+
+<div style="margin-top: -65px;">
 
 # Hi, I'm olkie 👋
 
@@ -17,6 +19,7 @@
   <img src="https://komarev.com/ghpvc/?username=olkie-iq&label=PROFILE+VIEWS&color=7aa2f7&style=flat-square" alt="Visits"/>
 </p>
 
+</div>
 </div>
 
 ---
